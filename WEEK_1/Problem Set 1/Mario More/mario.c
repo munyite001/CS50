@@ -4,7 +4,8 @@ int get_height(int x);
 
 void print_pyramid(int x);
 
-int main(void){
+int main(void)
+{
     //  Create a variable to store the height input
 
     int height;
@@ -19,9 +20,9 @@ int main(void){
 
     //Print Pyramid
     print_pyramid(height);
-    
-    
+
 }
+
 
 int get_height(int x)
 {
@@ -45,6 +46,12 @@ void print_pyramid(int x)
         {
             printf("#");
         }
+        printf("  ");
+        for(int k = 0; k <= i; k++)
+        {
+            printf("#");
+        }
+        
         printf("\n");
     }
 }
